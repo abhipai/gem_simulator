@@ -84,16 +84,27 @@ This project features the simulation of a Polaris Gem E2 vehicle with **Ackerman
 
 ## Local Installation
 
-0. Your need to sure that installation of Gazebo Ignition and ROS (ros_gz) for ros2 humble:`<br>`
-   `sudo apt-get install ros-${ROS_DISTRO}-ros-gz<br>`
-   `sudo apt-get install ros-${ROS_DISTRO}-gz-ros2-control<br>`
+0. Your need to sure that installation of Gazebo Ignition and ROS (ros_gz) for ros2 humble:
 
-   More details about installation Gazebo and ROS: `<a href="https://gazebosim.org/docs/latest/ros_installation/">`Link `</a>`
-1. Clone the repository:`<br>`
-   `mkdir -p gem_sim/src && cd gem_sim/src<br>`
-   `git clone https://github.com/UIUC-Robotics/gem_simulator.git<br>``cd ..`
-2. Build the project:
-   `colcon build --symlink-install && source install/setup.bash`
+```bash
+sudo apt-get install ros-${ROS_DISTRO}-ros-gz
+sudo apt-get install ros-${ROS_DISTRO}-gz-ros2-control
+```
+
+   More details about installing Gazebo and ROS:  
+[Link](https://gazebosim.org/docs/latest/ros_installation/)
+
+2. Clone the repository:
+```bash
+mkdir -p gem_sim/src
+cd gem_sim/src
+git clone https://github.com/UIUC-Robotics/gem_simulator.git
+cd ..
+```
+3. Build the project:
+   ```bash
+   colcon build --symlink-install && source install/setup.bash
+   ```
 
 ## Usage
 
